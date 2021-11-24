@@ -1,0 +1,288 @@
+.footer {
+    background-color: #f8f8f8;
+    @include responsive-size(padding-top,70,30,$maxWidthContainer);
+    &__content {
+    }
+
+    &__top {
+        @include responsive-size(padding-bottom,70,20,$maxWidthContainer);
+        border-bottom: 1px solid #e5e5e5;
+        @media (min-width:$md2+px) {
+            display: grid;
+            grid-template-columns: minmax(380px,480px) 1fr;
+            gap: 30px;
+            @include responsive-size(column-gap,30,0,1600);
+        }
+        
+
+    }
+
+    &__socials {
+    }
+
+    &__usefull-link {
+    }
+
+    &__botton {
+    }
+}
+
+.socials-footer {
+    @media (max-width:$md2+px) {
+        margin-bottom: 30px;
+    }
+    &__logo {
+        display: inline-block;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #cccccc;
+        transition: all 0.3s ease 0s;
+        @include responsive-size(font-size, 46,36,$maxWidthContainer);
+        @include responsive-size(margin-bottom, 20,15, $maxWidthContainer);
+        @media (any-hover:hover) {
+            &:hover {
+                color: #9b9393;
+            }
+        }
+    }
+
+    &__text {
+        font-family: Roboto;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+        @include responsive-size(font-size,15,13,$maxWidthContainer);
+        @include responsive-size(margin-bottom,40,20,$maxWidthContainer);
+
+    }
+
+    &__followers {
+        line-height: 1.2;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e5e5e5;;
+        span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__links {
+        @include responsive-size(margin-bottom,32,17,$maxWidthContainer);
+        span {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999999;
+            @include responsive-size(margin-right,20,10,$maxWidthContainer);
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        color: #95e1d3;
+        font-size: 16px;
+        transition: all 0.3s ease 0s;
+        &:not(:last-child) {
+            @include responsive-size(margin-right,10,6,$maxWidthContainer);
+        }
+        @media (any-hover:hover)  {
+            &:hover {
+                color: #2cb89e;
+
+            }
+        }
+    }
+
+    &__subscribe {
+    }
+
+    &__form {
+        @media (min-width:$md4+px) {
+            display: grid;
+            grid-template-columns: 230px 150px;
+        }
+
+    }
+
+    &__btn {
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        height: 40px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #95e1d3;    
+        @media (max-width:$md4+px) {
+            width: 100%;
+            height: 40px;
+        }    
+    }
+    &__input-container {
+        position: relative;
+        @media (max-width:$md4+px) {
+            width: 100%;
+    
+        }  
+    }
+}
+
+.form__error {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.307);
+    height: 30px;
+    line-height: 30px;
+}
+
+.input {
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #cccccc;
+    padding-left: 13px;
+    position: relative;
+    width: 100%;
+      
+    &._error {
+        position: relative;
+        border: 1px solid red;
+        color: red;
+    }
+    
+}
+
+
+.form__error {
+
+}
+
+
+.usefull-link {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    @media (max-width:$md2+px) {
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    @media (min-width:$md2+px) {
+        grid-template-columns: minmax(265px,355px) 270px;
+        @include responsive-size(column-gap,65,0,1600);
+    }
+    
+    &__column {
+        &:last-child {
+            @media (min-width:611px) {
+                justify-self: end;
+            }
+            justify-self: center;
+        }
+    }
+
+    &__title {
+        font-family: serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 40px;
+        @include responsive-size(margin-bottom,40,20,$maxWidthContainer);
+    }
+
+    &__items {
+        
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__instagramm {
+    }
+    &__instagramm-more {
+        display: block;
+        margin-top: 15px;
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #333333;
+        transition: all 0.3s ease 0s;
+        @media (any-hover:hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.item-usefull-link {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    @media (any-hover:hover) {
+        &:hover {
+            .item-usefull-link__text {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__img {
+        padding: 0 0 67% 0;
+    }
+
+    &__content {
+    }
+
+    &__text {
+        font-family: serif;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    &__date {
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+    }
+}
+.botton-footer {
+    padding: 24px 0;
+    text-align: center;
+    &__text {
+        font-family: serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #333333;
+        span  {
+            color: #f38181;
+        }
+    }
+}
