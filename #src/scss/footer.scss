@@ -128,21 +128,17 @@
         position: relative;
         @media (max-width:$md4+px) {
             width: 100%;
-    
         }  
     }
 }
 
 .form__error {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
     width: 100%;
     text-align: center;
     color: red;
     background-color: rgba(0, 0, 0, 0.307);
-    height: 30px;
-    line-height: 30px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .input {

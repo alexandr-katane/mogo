@@ -1296,15 +1296,12 @@ button.swiper-pagination-bullet {
 }
 
 .form__error {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
   width: 100%;
   text-align: center;
   color: red;
   background-color: rgba(0, 0, 0, 0.307);
-  height: 30px;
-  line-height: 30px;
+  height: 25px;
+  line-height: 25px;
 }
 
 .input {
@@ -1442,7 +1439,7 @@ button.swiper-pagination-bullet {
 }
 
 .main-slider__slide {
-  padding: 140px 0 180px 0;
+  padding: 130px 0 150px 0;
 }
 
 .slide-main {
