@@ -82,7 +82,8 @@ body {
 		}
 
 		&__slide {
-            padding:130px 0 150px 0;
+            @include responsive-size(padding-top,130, 90,$maxWidthContainer);
+            @include responsive-size(padding-bottom, 150, 90, $maxWidthContainer);
 		}
 }
 
@@ -116,12 +117,11 @@ body {
 
 		&__label {
             font-family: 'Kaushan Script';
-            @include responsive-size(font-size, 72, 20, 1600);
+            @include responsive-size(font-size, 72, 20, 1800);
             line-height: 1.2;
             font-weight: 400;
             color: #ffffff;
-            margin: 0 0 42px 0;
-            @include responsive-size(margin-bottom, 42, 15, 1600);
+            @include responsive-size(margin-bottom, 42, 15, 1800);
 		}
 
 		&__title {
@@ -131,9 +131,10 @@ body {
             color: #ffffff;
             max-width: 805px;
             text-align: center;
-            @include responsive-size(padding-bottom,71,30,1600);
-            @include responsive-size(margin-bottom,50,30,1600);
-            @include responsive-size(font-size,150,30,1700);
+            padding: 0 10px;
+            @include responsive-size(padding-bottom,71,20,1850);
+            @include responsive-size(margin-bottom,50,20,1850);
+            @include responsive-size(font-size,150,30,1850);
             @include responsive-size(line-height,140,40,1600);
             &::after {
                 content: '';
@@ -157,7 +158,6 @@ body {
             color: #ffffff;
             background-color: rgba(0,0,0,0.0);
             border: 3px solid #ffffff;
-            padding: 15px 32px;
             @include responsive-size(padding-top,15,10,1600);
             @include responsive-size(padding-bottom,15,10,1600);
             @include responsive-size(padding-left,32,20,1600);
