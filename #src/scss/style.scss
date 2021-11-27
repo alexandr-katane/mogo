@@ -358,7 +358,7 @@ body {
     background-color: #95e1d3;
     &__body {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
         position: relative;
         &::before {
             content: '';
@@ -379,6 +379,7 @@ body {
         @include responsive-size(padding-top,70,20,1600);
         @include responsive-size(padding-bottom,90,20,1600);
         border-right: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
     }
 
     &__number {
@@ -387,7 +388,8 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         color: #ffffff;
-        @include responsive-size(font-size,72,50,$maxWidthContainer);
+        @include responsive-size(font-size,72,20,$maxWidthContainer);
+
     }
 
     &__text {
@@ -395,6 +397,8 @@ body {
         line-height: 1.2;
         text-transform: uppercase;
         color: #ffffff;
+        @include responsive-size(font-size,14,11,$maxWidthContainer);
+
     }
 }
 
