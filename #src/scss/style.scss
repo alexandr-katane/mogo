@@ -358,7 +358,10 @@ body {
     background-color: #95e1d3;
     &__body {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        @media (max-width:$md3+px) {
+            grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        }
         position: relative;
         &::before {
             content: '';
@@ -383,22 +386,23 @@ body {
     }
 
     &__number {
+        flex: 1 1 auto;
         font-size: 72px;
         line-height: 1.2;
         font-weight: 700;
         text-transform: uppercase;
         color: #ffffff;
-        @include responsive-size(font-size,72,20,$maxWidthContainer);
+        @include responsive-size(font-size,72,30,$maxWidthContainer);
 
     }
 
     &__text {
-        font-size: 14px;
+        flex: 1 0 auto;
         line-height: 1.2;
         text-transform: uppercase;
         color: #ffffff;
-        @include responsive-size(font-size,14,11,$maxWidthContainer);
-
+        padding: 0 5px;
+        @include responsive-size(font-size,14,10,$maxWidthContainer);
     }
 }
 

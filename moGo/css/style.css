@@ -1725,7 +1725,7 @@ button.swiper-pagination-bullet {
 .statistic__body {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   position: relative;
 }
 
@@ -1760,6 +1760,9 @@ button.swiper-pagination-bullet {
 }
 
 .statistic__number {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-size: 72px;
   line-height: 1.2;
   font-weight: 700;
@@ -1769,10 +1772,13 @@ button.swiper-pagination-bullet {
 }
 
 .statistic__text {
-  font-size: 14px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 0 5px;
   font-size: 14px;
 }
 
@@ -2772,11 +2778,11 @@ button.swiper-pagination-bullet {
   }
 
   .statistic__number {
-    font-size: calc(20px + (72 - 20) * ((100vw - 320px) / (1230 - 320)));
+    font-size: calc(30px + (72 - 30) * ((100vw - 320px) / (1230 - 320)));
   }
 
   .statistic__text {
-    font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1230 - 320)));
+    font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1230 - 320)));
   }
 
   .services__list {
@@ -3009,6 +3015,10 @@ button.swiper-pagination-bullet {
 
   .slider__quote {
     margin-top: 15px;
+  }
+
+  .statistic__body {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   .devices__image-small-phone {
