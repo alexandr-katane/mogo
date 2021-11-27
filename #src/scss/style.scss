@@ -792,6 +792,14 @@ body {
 
 .link-work {
     text-align: center;
+    @media (any-hover: hover) {
+        &:hover {
+            .link-work__title, .link-work__text {
+                text-decoration: underline;
+            }
+        }
+        
+    }
     &__img {
         margin: 0 0 20px 0;
     }
