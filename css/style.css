@@ -3179,6 +3179,11 @@ button.swiper-pagination-bullet {
     color: #fff;
   }
 
+  .link-work:hover .link-work__title,
+  .link-work:hover .link-work__text {
+    text-decoration: underline;
+  }
+
   .item-blog__top:hover {
     -webkit-box-shadow: 10px 5px 5px gray;
             box-shadow: 10px 5px 5px gray;
