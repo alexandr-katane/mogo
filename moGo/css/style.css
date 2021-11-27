@@ -1289,6 +1289,9 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #95e1d3;
+  -webkit-transform: all 0.3s ease 0s;
+      -ms-transform: all 0.3s ease 0s;
+          transform: all 0.3s ease 0s;
 }
 
 .socials-footer__input-container {
@@ -3153,6 +3156,10 @@ button.swiper-pagination-bullet {
 
   .socials-footer__link:hover {
     color: #2cb89e;
+  }
+
+  .socials-footer__btn:hover {
+    background-color: #4fd1b9;
   }
 
   .usefull-link__instagramm-more:hover {
