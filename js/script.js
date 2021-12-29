@@ -84,7 +84,7 @@ let sliderNames = ["<span>01</span> Intro", "<span>02</span> Work", "<span>03</s
 if (document.querySelector('.main-slider__body')) {
     let mainSlider = new Swiper('.main-slider__body', {
         slidesPerView: 1,
-        allowTouchMove: false,
+        allowTouchMove: true,
         speed: 800,
         loop: true,
         preloadImages: false,
@@ -92,6 +92,7 @@ if (document.querySelector('.main-slider__body')) {
         autoHeight: true,
         autoplay: {
             delay: 4200,
+            disableOnInteraction: false,
         },
         //Dotts
         pagination: {

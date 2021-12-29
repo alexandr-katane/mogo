@@ -94,7 +94,7 @@ h6 {
 }
 
 body {
-  font-family: "Montserrat" serif;
+  font-family: "Montserrat", serif;
 }
 
 body._lock {
@@ -1689,7 +1689,7 @@ button.swiper-pagination-bullet {
 }
 
 .intro-info__text {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
