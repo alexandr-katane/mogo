@@ -185,11 +185,16 @@ body._lock {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
   width: 100%;
   z-index: 4;
+}
+
+.header._active {
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header__content {
